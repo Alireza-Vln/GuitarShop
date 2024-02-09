@@ -28,7 +28,7 @@ class Runner
                 // Add SQLite support to FluentMigrator
                 .AddSqlServer()
                 // Set the connection string
-                .WithGlobalConnectionString("Data Source=test.db")
+                .WithGlobalConnectionString("Server=.;Database=GuitarDB;Trusted_Connection=True;TrustServerCertificate=True")
                 // Define the assembly containing the migrations
                 .ScanIn(typeof(Runner).Assembly).For.Migrations())
             // Enable logging to console in the FluentMigrator way
