@@ -18,6 +18,17 @@ builder.Services.AddScoped<IUserService,UserService>();
 builder.Services.AddScoped<IUserRepostory, UserRepostory>();
 builder.Services.AddScoped<IElectriceGuitarRepostory, ElectricGuitarRepostry>();
 builder.Services.AddScoped<IElectricGuitarService,ElectricGuitarService>();
+builder.Services.AddScoped<IClassicGuitarRepostory, ClassicGuitarRepostory>();
+builder.Services.AddScoped<IClassicGuitarService, ClassicGuitarService>();
+
+
+
+
+
+
+
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
