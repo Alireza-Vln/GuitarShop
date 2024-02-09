@@ -6,7 +6,7 @@ using OnlineShopGuitar.Services.Contracts;
 namespace OnlineShopGuitar.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("Api/BassGuitar")]
     public class BassGuitarController : Controller
     {
         readonly IBassGuitarService _service;

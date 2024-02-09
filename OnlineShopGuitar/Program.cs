@@ -14,6 +14,10 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<EfDbContext>();
 builder.Services.AddScoped<IBassGuitarService,BassGuitarService>();
 builder.Services.AddScoped<IBassGuitarRepostory,BassGuitarRepostory>();
+builder.Services.AddScoped<IUserService,UserService>();
+builder.Services.AddScoped<IUserRepostory, UserRepostory>();
+builder.Services.AddScoped<IElectriceGuitarRepostory, ElectricGuitarRepostry>();
+builder.Services.AddScoped<IElectricGuitarService,ElectricGuitarService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

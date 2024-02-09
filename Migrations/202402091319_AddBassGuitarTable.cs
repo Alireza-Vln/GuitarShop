@@ -18,10 +18,17 @@ namespace Migrations
                 .WithColumn("Model").AsString(50).NotNullable()
                 .WithColumn("Price").AsDecimal(18, 3).NotNullable()
                 .WithColumn("Count").AsInt32().NotNullable();
+
+            Create.Table("Users")
+              .WithColumn("Id").AsInt32().Identity().PrimaryKey()
+              .WithColumn("Name").AsString(50).NotNullable()
+              .WithColumn("Email").AsString(50).NotNullable()
+              .WithColumn("PhoneNumber").AsString(50).NotNullable();
         }
         public override void Down()
         {
             Delete.Table("BassGuitars");
+            Delete.Table("Users");
         }
 
        
