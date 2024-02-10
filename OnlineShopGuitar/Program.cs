@@ -20,12 +20,8 @@ builder.Services.AddScoped<IElectriceGuitarRepostory, ElectricGuitarRepostry>();
 builder.Services.AddScoped<IElectricGuitarService,ElectricGuitarService>();
 builder.Services.AddScoped<IClassicGuitarRepostory, ClassicGuitarRepostory>();
 builder.Services.AddScoped<IClassicGuitarService, ClassicGuitarService>();
-
-
-
-
-
-
+builder.Services.AddScoped<IAcousticGuitarRepostory, AcousticGuitarRepostory>();
+builder.Services.AddScoped<IAcousticGuitarService, AcousticGuitarService>();
 
 
 
