@@ -20,5 +20,13 @@ namespace OnlineShopGuitar.Maps
         {
            return _context.AcousticGuitars.ToList();
         }
+        public List<AcousticGuitar> DeleteAcoustic(int Id)
+        {
+            var acoustic= _context.AcousticGuitars.Where(_=>_.Id == Id).First();
+            _context.AcousticGuitars.Remove(acoustic);
+            _context.SaveChanges();
+            return _context.AcousticGuitars.ToList();
+          
+        }
     }
 }

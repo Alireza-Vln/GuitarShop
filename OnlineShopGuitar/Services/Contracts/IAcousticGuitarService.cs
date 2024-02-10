@@ -7,5 +7,6 @@ namespace OnlineShopGuitar.Services.Contracts
     {
         public void AddAcoustic(AddAcousticGuitarDto dto);
         public List<AcousticGuitar> GetAllAcousticGuitars();
+        public List<AcousticGuitar> DeleteAcoustic(DeleteAcousticGuitarDto dto);
     }
 }

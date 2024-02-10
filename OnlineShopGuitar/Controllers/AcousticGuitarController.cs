@@ -24,5 +24,11 @@ namespace OnlineShopGuitar.Controllers
         {
             return _service.GetAllAcousticGuitars();
         }
+        [HttpDelete("Delet-AcousticGuitar")]
+        public List<AcousticGuitar> DeleteAcoustic([FromQuery]DeleteAcousticGuitarDto dto)
+        {
+            return _service.DeleteAcoustic(dto);
+        }
+
     }
 }

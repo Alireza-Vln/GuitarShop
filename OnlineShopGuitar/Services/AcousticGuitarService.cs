@@ -24,9 +24,17 @@ namespace OnlineShopGuitar.Services
             _repostory.AddAcoustic(acoustic);
         }
 
+        public List<AcousticGuitar> DeleteAcoustic(DeleteAcousticGuitarDto dto)
+        {
+    
+           return _repostory.DeleteAcoustic(dto.AcousticId);
+           
+        }
+
         public List<AcousticGuitar> GetAllAcousticGuitars()
         {
             return _repostory.GetAllAcoustic();
         }
+        
     }
 }

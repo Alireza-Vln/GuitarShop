@@ -6,5 +6,8 @@ namespace OnlineShopGuitar.Maps
     {
         void AddAcoustic(AcousticGuitar acoustic);
         List<AcousticGuitar> GetAllAcoustic();
+        List<AcousticGuitar> DeleteAcoustic(int Id);
+        
+
     }
 }
