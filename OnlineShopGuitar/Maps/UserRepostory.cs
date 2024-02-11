@@ -7,7 +7,7 @@ namespace OnlineShopGuitar.Maps
     {
         private readonly EfDbContext _Context;
         public UserRepostory(EfDbContext context)
-        {
+        {  
             _Context = context;
         }
         public void AddUser(User user)

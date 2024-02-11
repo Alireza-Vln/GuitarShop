@@ -12,16 +12,16 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<EfDbContext>();
-builder.Services.AddScoped<IBassGuitarService,BassGuitarService>();
 builder.Services.AddScoped<IBassGuitarRepostory,BassGuitarRepostory>();
-builder.Services.AddScoped<IUserService,UserService>();
-builder.Services.AddScoped<IUserRepostory, UserRepostory>();
+builder.Services.AddScoped<IBassGuitarService,BassGuitarService>();
 builder.Services.AddScoped<IElectriceGuitarRepostory, ElectricGuitarRepostry>();
 builder.Services.AddScoped<IElectricGuitarService,ElectricGuitarService>();
 builder.Services.AddScoped<IClassicGuitarRepostory, ClassicGuitarRepostory>();
 builder.Services.AddScoped<IClassicGuitarService, ClassicGuitarService>();
 builder.Services.AddScoped<IAcousticGuitarRepostory, AcousticGuitarRepostory>();
 builder.Services.AddScoped<IAcousticGuitarService, AcousticGuitarService>();
+builder.Services.AddScoped<IUserRepostory, UserRepostory>();
+builder.Services.AddScoped<IUserService,UserService>();
 
 
 

@@ -24,8 +24,23 @@ namespace OnlineShopGuitar.Services
                 Price = dto.Price,
             };
 
-         _bassGuitarRepostory.AddBass(bass);
-           
+            _bassGuitarRepostory.AddBass(bass);
+
+        }
+
+        public List<BassGuitar> DeleteBassGuitar(DeleteBassGuitarDto dto)
+        {
+            return _bassGuitarRepostory.DeleteBassGuitar(dto.BassId);
+        }
+
+        public List<BassGuitar> GetAllBassGuitars()
+        {
+            return _bassGuitarRepostory.GetAllBassGuitar();
+        }
+
+        public void UpdateBassGuitar(UpdateBassGuitarPriceDto dto)
+        {
+            _bassGuitarRepostory.UpdateBassPrice(dto.BassId, dto.BassPrice);
         }
     }
 }
