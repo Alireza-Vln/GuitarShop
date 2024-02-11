@@ -35,6 +35,10 @@ namespace OnlineShopGuitar.Services
         {
             return _repostory.GetAllAcoustic();
         }
-        
+
+        public void UpdateAcousticGuitar(UpdateAcousticGuitarDto dto)
+        {
+            _repostory.UpadateAcoustic(dto.AcousticId,dto.AcousticPrice);
+        }
     }
 }

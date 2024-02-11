@@ -29,6 +29,10 @@ namespace OnlineShopGuitar.Controllers
         {
             return _service.DeleteAcoustic(dto);
         }
-
+        [HttpPatch]
+        public void UpdateAcoustic([FromQuery]UpdateAcousticGuitarDto dto)
+        {
+            _service.UpdateAcousticGuitar(dto);
+        }
     }
 }

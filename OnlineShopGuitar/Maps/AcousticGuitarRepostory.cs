@@ -28,5 +28,16 @@ namespace OnlineShopGuitar.Maps
             return _context.AcousticGuitars.ToList();
           
         }
+
+        public void UpadateAcoustic(int id, decimal price)
+        {
+            var acoustic=_context.AcousticGuitars.FirstOrDefault(_=>_.Id == id);
+            if (acoustic == null)
+            {
+                throw new Exception("not Found");
+            }
+            acoustic.Price = price;
+            _context.SaveChanges();
+        }
     }
 }

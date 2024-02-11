@@ -24,5 +24,20 @@ namespace OnlineShopGuitar.Services
             };
             _Classicrepostory.AddClassic(classic);
         }
+
+        public List<ClassicGuitar> DeleteClassicGuitars(DeleteClassicGuitarDto dto)
+        {
+            return _Classicrepostory.DeleteClassicGuitars(dto.ClassicId);
+        }
+
+        public List<ClassicGuitar> GetClassicGuitars()
+        {
+            return _Classicrepostory.GetClassicGuitars();
+        }
+
+        public void UpdateClassicGuitar(UpdateClassicGuitarDto dto)
+        {
+            _Classicrepostory.UpdateClassicGuitar(dto.ClassicId,dto.ClassicPrice);
+        }
     }
 }
