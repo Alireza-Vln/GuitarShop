@@ -23,5 +23,23 @@ namespace OnlineShopGuitar.Services
             };
             _electriceRepostory.AddElectric(electric);
         }
+
+        public List<ElectircGuitar> DeleteElectircGuitars(DeleteElectricGuitarDto dto)
+        {
+            return _electriceRepostory.DeleteElectircGuitars(dto.ElectricId);
+            
+        }
+
+        public List<ElectircGuitar> GetElectircGuitars()
+        {
+            return _electriceRepostory.GetElectric();
+        }
+
+    
+        public void UpdateElectircGuitar(UpdateElectricGuitarDto dto)
+        {
+            _electriceRepostory.UpadateElectricGuitarPrice(dto.ElectricId, dto.ElectricePrice);
+
+        }
     }
 }

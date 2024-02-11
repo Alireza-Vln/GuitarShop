@@ -33,12 +33,10 @@ namespace OnlineShopGuitar.Maps
             var bass=_dbContext.BassGuitars.First(x => x.Id == id);
             if (bass == null)
             {
-                throw new Exception("not Find");
+                throw new Exception("not Found");
             }
           bass.Price = price;
-
-            _dbContext.SaveChanges();
-
+         _dbContext.SaveChanges();
         }
     }
 }

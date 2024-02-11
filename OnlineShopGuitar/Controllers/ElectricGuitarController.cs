@@ -20,5 +20,24 @@ namespace OnlineShopGuitar.Controllers
         {
             _service.AddElectric(dto);
         }
+        [HttpGet("Get-AllElectricGuitar")]
+
+        public List<ElectircGuitar> GetElectircGuitars()
+        {
+            return _service.GetElectircGuitars();
+        }
+
+        [HttpDelete("Delete-ElectricGuitar")]
+        public List<ElectircGuitar> DeleteElecrticGuiatr([FromQuery]DeleteElectricGuitarDto dto)
+        {
+            return _service.DeleteElectircGuitars(dto);
+        }
+
+        [HttpPatch("Update-ElectricguitarPrice")]
+        public void UpdateElectricGuitarPrice([FromQuery] UpdateElectricGuitarDto dto)
+        {
+            _service.UpdateElectircGuitar(dto);
+        }
+
     }
 }

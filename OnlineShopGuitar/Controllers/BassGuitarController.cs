@@ -24,7 +24,6 @@ namespace OnlineShopGuitar.Controllers
         }
 
 
-
         [HttpGet("Get-AllBassGuitar")]
         public List<BassGuitar> GetAllBassGuitars()
         {

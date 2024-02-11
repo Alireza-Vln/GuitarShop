@@ -8,7 +8,7 @@ namespace OnlineShopGuitar.Maps
         List<BassGuitar> GetAllBassGuitar();
         List<BassGuitar> DeleteBassGuitar(int id);
         void UpdateBassPrice(int id,decimal price);
+       
         
-
     }
 }
