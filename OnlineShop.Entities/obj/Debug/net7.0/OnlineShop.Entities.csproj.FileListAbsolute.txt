@@ -1,0 +1,11 @@
+C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\OnlineShop.Entities\bin\Debug\net7.0\OnlineShop.Entities.deps.json
+C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\OnlineShop.Entities\bin\Debug\net7.0\OnlineShop.Entities.dll
+C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\OnlineShop.Entities\bin\Debug\net7.0\OnlineShop.Entities.pdb
+C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\OnlineShop.Entities\obj\Debug\net7.0\OnlineShop.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\OnlineShop.Entities\obj\Debug\net7.0\OnlineShop.Entities.AssemblyInfoInputs.cache
+C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\OnlineShop.Entities\obj\Debug\net7.0\OnlineShop.Entities.AssemblyInfo.cs
+C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\OnlineShop.Entities\obj\Debug\net7.0\OnlineShop.Entities.csproj.CoreCompileInputs.cache
+C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\OnlineShop.Entities\obj\Debug\net7.0\OnlineShop.Entities.dll
+C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\OnlineShop.Entities\obj\Debug\net7.0\refint\OnlineShop.Entities.dll
+C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\OnlineShop.Entities\obj\Debug\net7.0\OnlineShop.Entities.pdb
+C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\OnlineShop.Entities\obj\Debug\net7.0\ref\OnlineShop.Entities.dll

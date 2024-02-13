@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "OnlineShop.Services/1.0.0": {
+        "dependencies": {
+          "OnlineShop.Entities": "1.0.0"
+        },
+        "runtime": {
+          "OnlineShop.Services.dll": {}
+        }
+      },
+      "OnlineShop.Entities/1.0.0": {
+        "runtime": {
+          "OnlineShop.Entities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OnlineShop.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OnlineShop.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

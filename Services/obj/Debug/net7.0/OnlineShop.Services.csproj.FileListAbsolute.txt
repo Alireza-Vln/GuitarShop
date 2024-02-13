@@ -1,0 +1,15 @@
+C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\Services\bin\Debug\net7.0\OnlineShop.Services.deps.json
+C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\Services\bin\Debug\net7.0\OnlineShop.Services.dll
+C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\Services\bin\Debug\net7.0\OnlineShop.Services.pdb
+C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\Services\bin\Debug\net7.0\OnlineShop.Entities.dll
+C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\Services\bin\Debug\net7.0\OnlineShop.Entities.pdb
+C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\Services\obj\Debug\net7.0\OnlineShop.Services.csproj.AssemblyReference.cache
+C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\Services\obj\Debug\net7.0\OnlineShop.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\Services\obj\Debug\net7.0\OnlineShop.Services.AssemblyInfoInputs.cache
+C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\Services\obj\Debug\net7.0\OnlineShop.Services.AssemblyInfo.cs
+C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\Services\obj\Debug\net7.0\OnlineShop.Services.csproj.CoreCompileInputs.cache
+C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\Services\obj\Debug\net7.0\OnlineShop.Services.csproj.CopyComplete
+C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\Services\obj\Debug\net7.0\OnlineShop.Services.dll
+C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\Services\obj\Debug\net7.0\refint\OnlineShop.Services.dll
+C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\Services\obj\Debug\net7.0\OnlineShop.Services.pdb
+C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\Services\obj\Debug\net7.0\ref\OnlineShop.Services.dll
