@@ -2,7 +2,7 @@
 
 namespace OnlineShopGuitar.Maps
 {
-    public interface IElectriceGuitarRepostory
+    public interface ElectriceGuitarRepostory
     {
         void AddElectric(ElectircGuitar electircGuitar);
         List <ElectircGuitar> GetElectric();

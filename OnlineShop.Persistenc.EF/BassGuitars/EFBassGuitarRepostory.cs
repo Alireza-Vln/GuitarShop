@@ -2,10 +2,10 @@
 
 namespace OnlineShopGuitar.Maps
 {
-    public class BassGuitarRepostory : IBassGuitarRepostory
+    public class EFBassGuitarRepostory : BassGuitarRepostory
     {
         private readonly EfDbContext _dbContext;
-        public BassGuitarRepostory(EfDbContext context) 
+        public EFBassGuitarRepostory(EfDbContext context) 
         {
             _dbContext = context;
         }

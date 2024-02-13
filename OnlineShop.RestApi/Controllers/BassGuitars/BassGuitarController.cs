@@ -9,8 +9,8 @@ namespace OnlineShopGuitar.Controllers
     [Route("Api/BassGuitar")]
     public class BassGuitarController : Controller
     {
-        readonly IBassGuitarService _service;
-        public BassGuitarController(IBassGuitarService service)
+        readonly BassGuitarService _service;
+        public BassGuitarController(BassGuitarService service)
         {
             _service = service;
         }
@@ -18,29 +18,29 @@ namespace OnlineShopGuitar.Controllers
 
 
         [HttpPost("Add-BassGuitar")]
-        public void AddBass([FromBody] AddGuitarBassDto dto)
+        public async Task AddBass([FromBody] AddGuitarBassDto dto)
         {
-            _service.AddBass(dto);
+           await _service.AddBass(dto);
         }
 
 
         [HttpGet("Get-AllBassGuitar")]
-        public List<BassGuitar> GetAllBassGuitars()
+        public async Task<List<BassGuitar>> GetAllBassGuitars()
         {
-            return _service.GetAllBassGuitars();
+             return await _service.GetAllBassGuitars();
         }
 
 
         [HttpDelete("Delete-BassGuitar")]
-        public List<BassGuitar> DeleteBassGuitar([FromQuery] DeleteBassGuitarDto dto)
+        public async Task <List<BassGuitar>> DeleteBassGuitar([FromQuery] DeleteBassGuitarDto dto)
         {
-            return _service.DeleteBassGuitar(dto);
+            return await _service.DeleteBassGuitar(dto);
         }
 
         [HttpPatch("Update-BassGuitarPrice")]
-        public void UpdateBassGuitarPrice([FromQuery] UpdateBassGuitarPriceDto dto)
+        public async Task UpdateBassGuitarPrice([FromQuery] UpdateBassGuitarPriceDto dto)
         {
-            _service.UpdateBassGuitar(dto);
+            await _service.UpdateBassGuitar(dto);
         }
     }
 }

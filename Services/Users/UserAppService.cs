@@ -5,10 +5,10 @@ using OnlineShopGuitar.Services.Contracts;
 
 namespace OnlineShopGuitar.Services
 {
-    public class UserService : IUserService
+    public class UserAppService : UserService
     {
-        private readonly IUserRepostory _UserRepostory;
-        public UserService(IUserRepostory userRepostory)
+        private readonly UserRepostory _UserRepostory;
+        public UserAppService(UserRepostory userRepostory)
         {
             _UserRepostory = userRepostory;
         }

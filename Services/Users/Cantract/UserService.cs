@@ -3,7 +3,7 @@ using OnlineShopGuitar.Entities;
 
 namespace OnlineShopGuitar.Services.Contracts
 {
-    public interface IUserService
+    public interface UserService
     {
       public void AddUser(AddUserDto dto);
     }

@@ -5,14 +5,14 @@ using OnlineShopGuitar.Services.Contracts;
 
 namespace OnlineShopGuitar.Services
 {
-    public class ClassicGuitarService : IClassicGuitarService
+    public class ClassicGuitarAppService : ClassicGuitarService
     {
-       private readonly IClassicGuitarRepostory _Classicrepostory;
-        public ClassicGuitarService(IClassicGuitarRepostory classicrepostory)
+       private readonly ClassicGuitarRepostory _Classicrepostory;
+        public ClassicGuitarAppService(ClassicGuitarRepostory classicrepostory)
         {
             _Classicrepostory = classicrepostory;
         }
-        public void AddClassic(AddClassicGuitarDto dto)
+        public async Task AddClassic(AddClassicGuitarDto dto)
         {
             var classic = new ClassicGuitar
             {
@@ -25,17 +25,17 @@ namespace OnlineShopGuitar.Services
             _Classicrepostory.AddClassic(classic);
         }
 
-        public List<ClassicGuitar> DeleteClassicGuitars(DeleteClassicGuitarDto dto)
+        public async Task <List<ClassicGuitar>> DeleteClassicGuitars(DeleteClassicGuitarDto dto)
         {
             return _Classicrepostory.DeleteClassicGuitars(dto.ClassicId);
         }
 
-        public List<ClassicGuitar> GetClassicGuitars()
+        public async Task <List<ClassicGuitar>> GetClassicGuitars()
         {
             return _Classicrepostory.GetClassicGuitars();
         }
 
-        public void UpdateClassicGuitar(UpdateClassicGuitarDto dto)
+        public async Task UpdateClassicGuitar(UpdateClassicGuitarDto dto)
         {
             _Classicrepostory.UpdateClassicGuitar(dto.ClassicId,dto.ClassicPrice);
         }

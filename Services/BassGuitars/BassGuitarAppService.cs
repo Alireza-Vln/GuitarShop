@@ -5,16 +5,16 @@ using OnlineShopGuitar.Services.Contracts;
 
 namespace OnlineShopGuitar.Services
 {
-    public class BassGuitarService : IBassGuitarService
+    public class BassGuitarAppService : BassGuitarService
     {
-        private readonly IBassGuitarRepostory _bassGuitarRepostory;
+        private readonly BassGuitarRepostory _bassGuitarRepostory;
 
-        public BassGuitarService(IBassGuitarRepostory bassGuitarRepostory)
+        public BassGuitarAppService(BassGuitarRepostory bassGuitarRepostory)
         {
             _bassGuitarRepostory = bassGuitarRepostory;
         }
 
-        public void AddBass(AddGuitarBassDto dto)
+        public async Task AddBass(AddGuitarBassDto dto)
         {
             var bass = new BassGuitar
             {
@@ -28,17 +28,17 @@ namespace OnlineShopGuitar.Services
 
         }
 
-        public List<BassGuitar> DeleteBassGuitar(DeleteBassGuitarDto dto)
+        public async Task <List<BassGuitar>> DeleteBassGuitar(DeleteBassGuitarDto dto)
         {
-            return _bassGuitarRepostory.DeleteBassGuitar(dto.BassId);
+             return _bassGuitarRepostory.DeleteBassGuitar(dto.BassId);
         }
 
-        public List<BassGuitar> GetAllBassGuitars()
+        public async Task< List<BassGuitar>> GetAllBassGuitars()
         {
             return _bassGuitarRepostory.GetAllBassGuitar();
         }
 
-        public void UpdateBassGuitar(UpdateBassGuitarPriceDto dto)
+        public async Task UpdateBassGuitar(UpdateBassGuitarPriceDto dto)
         {
             _bassGuitarRepostory.UpdateBassPrice(dto.BassId, dto.BassPrice);
         }

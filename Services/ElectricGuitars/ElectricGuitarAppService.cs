@@ -5,14 +5,14 @@ using OnlineShopGuitar.Services.Contracts;
 
 namespace OnlineShopGuitar.Services
 {
-    public class ElectricGuitarService : IElectricGuitarService
+    public class ElectricGuitarAppService : ElectricGuitarService
     {
-        private readonly IElectriceGuitarRepostory _electriceRepostory;
-        public ElectricGuitarService(IElectriceGuitarRepostory electriceGuitar)
+        private readonly ElectriceGuitarRepostory _electriceRepostory;
+        public ElectricGuitarAppService(ElectriceGuitarRepostory electriceGuitar)
         {
             _electriceRepostory = electriceGuitar;
         }
-        public void AddElectric(AddElecetricGuitarDto dto)
+        public async Task AddElectric(AddElecetricGuitarDto dto)
         {
             var electric = new ElectircGuitar
             {
@@ -24,19 +24,19 @@ namespace OnlineShopGuitar.Services
             _electriceRepostory.AddElectric(electric);
         }
 
-        public List<ElectircGuitar> DeleteElectircGuitars(DeleteElectricGuitarDto dto)
+        public async Task<List<ElectircGuitar>> DeleteElectircGuitars(DeleteElectricGuitarDto dto)
         {
             return _electriceRepostory.DeleteElectircGuitars(dto.ElectricId);
             
         }
 
-        public List<ElectircGuitar> GetElectircGuitars()
+        public async Task<List<ElectircGuitar>> GetElectircGuitars()
         {
             return _electriceRepostory.GetElectric();
         }
 
     
-        public void UpdateElectircGuitar(UpdateElectricGuitarDto dto)
+        public async Task UpdateElectircGuitar(UpdateElectricGuitarDto dto)
         {
             _electriceRepostory.UpadateElectricGuitarPrice(dto.ElectricId, dto.ElectricePrice);
 

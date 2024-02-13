@@ -3,10 +3,10 @@ using OnlineShopGuitar.Entities;
 
 namespace OnlineShopGuitar.Maps
 {
-    public class UserRepostory : IUserRepostory
+    public class EFUserRepostory : UserRepostory
     {
         private readonly EfDbContext _Context;
-        public UserRepostory(EfDbContext context)
+        public EFUserRepostory(EfDbContext context)
         {  
             _Context = context;
         }

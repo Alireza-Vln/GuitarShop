@@ -2,7 +2,7 @@
 
 namespace OnlineShopGuitar.Maps
 {
-    public interface IBassGuitarRepostory
+    public interface BassGuitarRepostory
     {
         void AddBass(BassGuitar bassGuitar);
         List<BassGuitar> GetAllBassGuitar();

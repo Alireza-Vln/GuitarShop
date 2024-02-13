@@ -9,34 +9,34 @@ namespace OnlineShopGuitar.Controllers
     [Route("ElectricGuitar")]
     public class ElectricGuitarController : Controller
     {
-     private readonly IElectricGuitarService _service;
-        public ElectricGuitarController(IElectricGuitarService electricGuitarService)
+     private readonly ElectricGuitarService _service;
+        public ElectricGuitarController(ElectricGuitarService electricGuitarService)
         {
             _service = electricGuitarService;
         }
 
         [HttpPost("Add-ElectricGuitar")]
-        public void AddElectericGuitar([FromBody] AddElecetricGuitarDto dto)
+        public async Task AddElectericGuitar([FromBody] AddElecetricGuitarDto dto)
         {
-            _service.AddElectric(dto);
+            await _service.AddElectric(dto);
         }
         [HttpGet("Get-AllElectricGuitar")]
 
-        public List<ElectircGuitar> GetElectircGuitars()
+        public async Task<List<ElectircGuitar>> GetElectircGuitars()
         {
-            return _service.GetElectircGuitars();
+            return await _service.GetElectircGuitars();
         }
 
         [HttpDelete("Delete-ElectricGuitar")]
-        public List<ElectircGuitar> DeleteElecrticGuiatr([FromQuery]DeleteElectricGuitarDto dto)
+        public async Task<List<ElectircGuitar>> DeleteElecrticGuiatr([FromQuery]DeleteElectricGuitarDto dto)
         {
-            return _service.DeleteElectircGuitars(dto);
+            return await _service.DeleteElectircGuitars(dto);
         }
 
         [HttpPatch("Update-ElectricguitarPrice")]
-        public void UpdateElectricGuitarPrice([FromQuery] UpdateElectricGuitarDto dto)
+        public async Task UpdateElectricGuitarPrice([FromQuery] UpdateElectricGuitarDto dto)
         {
-            _service.UpdateElectircGuitar(dto);
+            await _service.UpdateElectircGuitar(dto);
         }
 
     }

@@ -2,11 +2,11 @@
 
 namespace OnlineShopGuitar.Maps
 {
-    public class ElectricGuitarRepostry:IElectriceGuitarRepostory
+    public class EFElectricGuitarRepostry:ElectriceGuitarRepostory
     {
         private readonly EfDbContext _context;
 
-        public ElectricGuitarRepostry(EfDbContext context)
+        public EFElectricGuitarRepostry(EfDbContext context)
         {
             _context = context;
         }

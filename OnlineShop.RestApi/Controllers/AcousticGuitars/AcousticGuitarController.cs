@@ -9,30 +9,30 @@ namespace OnlineShopGuitar.Controllers
     [Route("Api/AcousticGuitar")]
     public class AcousticGuitarController : Controller
     {
-        private readonly IAcousticGuitarService _service;
-        public AcousticGuitarController(IAcousticGuitarService service)
+        private readonly AcousticGuitarService _service;
+        public AcousticGuitarController(AcousticGuitarService service)
         {
             _service = service;
         }
         [HttpPost("Add-AcoutsicGuitar")]
-        public void AddAcoustic([FromBody]AddAcousticGuitarDto dto)
+        public async Task AddAcoustic([FromBody]AddAcousticGuitarDto dto)
         {
-            _service.AddAcoustic(dto);
+            await _service.AddAcoustic(dto);
         }
         [HttpGet("GetAllAcousticGuitar")]
-        public List<AcousticGuitar> GetAcousticGuitars()
+        public async  Task<List<AcousticGuitar>> GetAcousticGuitars()
         {
-            return _service.GetAllAcousticGuitars();
+            return await _service.GetAllAcousticGuitars();
         }
         [HttpDelete("Delet-AcousticGuitar")]
-        public List<AcousticGuitar> DeleteAcoustic([FromQuery]DeleteAcousticGuitarDto dto)
+        public async Task<List<AcousticGuitar>> DeleteAcoustic([FromQuery]DeleteAcousticGuitarDto dto)
         {
-            return _service.DeleteAcoustic(dto);
+            return await _service.DeleteAcoustic(dto);
         }
         [HttpPatch]
-        public void UpdateAcoustic([FromQuery]UpdateAcousticGuitarDto dto)
+        public async Task UpdateAcoustic([FromQuery]UpdateAcousticGuitarDto dto)
         {
-            _service.UpdateAcousticGuitar(dto);
+            await _service.UpdateAcousticGuitar(dto);
         }
     }
 }

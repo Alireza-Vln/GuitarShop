@@ -10,37 +10,37 @@ namespace OnlineShopGuitar.Controllers
     [Route("ClassicGuitar")]
     public class ClassicGuitarController : Controller
     {
-    private readonly IClassicGuitarService _service;
-        public ClassicGuitarController(IClassicGuitarService service)
+    private readonly ClassicGuitarService _service;
+        public ClassicGuitarController(ClassicGuitarService service)
         {
             _service = service;
         }
         [HttpPost("Add-ClassiceGuitar")]
 
-        public void AddClassic([FromBody]AddClassicGuitarDto dto)
+        public async Task AddClassic([FromBody]AddClassicGuitarDto dto)
         {
-            _service.AddClassic(dto);
+            await _service.AddClassic(dto);
         }
 
         [HttpGet("GetAllClassicGuitar")]
 
-        public List<ClassicGuitar> GetClassic()
+        public async Task<List<ClassicGuitar>> GetClassic()
         {
-            return _service.GetClassicGuitars();
+            return await _service.GetClassicGuitars();
         }
 
         [HttpDelete("Delete-classicGuitar")]
 
-        public List<ClassicGuitar> DeleteClassic([FromQuery]DeleteClassicGuitarDto dto)
+        public async Task<List<ClassicGuitar>> DeleteClassic([FromQuery]DeleteClassicGuitarDto dto)
         {
-            return _service.DeleteClassicGuitars(dto);
+            return await _service.DeleteClassicGuitars(dto);
         }
 
         [HttpPatch("Upadte-CalassicGuitarPrice")]
 
-        public  void UpdateClassicPrice([FromQuery]UpdateClassicGuitarDto dto)
+        public  async Task UpdateClassicPrice([FromQuery]UpdateClassicGuitarDto dto)
         {
-            _service.UpdateClassicGuitar(dto);
+            await _service.UpdateClassicGuitar(dto);
         }
     }
 }

@@ -8,8 +8,8 @@ namespace OnlineShopGuitar.Controllers
     [Route("Api/User")]
     public class UserController : Controller
     {
-        private readonly IUserService _service;
-        public UserController(IUserService service)
+        private readonly UserService _service;
+        public UserController(UserService service)
         {
             _service = service;
         }

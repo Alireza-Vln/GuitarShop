@@ -2,7 +2,7 @@
 
 namespace OnlineShopGuitar.Maps
 {
-    public interface IClassicGuitarRepostory
+    public interface ClassicGuitarRepostory
     {
         void AddClassic(ClassicGuitar classicGuitar);
         public List<ClassicGuitar> GetClassicGuitars();

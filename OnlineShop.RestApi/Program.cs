@@ -12,16 +12,16 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<EfDbContext>();
-builder.Services.AddScoped<IBassGuitarRepostory,BassGuitarRepostory>();
-builder.Services.AddScoped<IBassGuitarService,BassGuitarService>();
-builder.Services.AddScoped<IElectriceGuitarRepostory, ElectricGuitarRepostry>();
-builder.Services.AddScoped<IElectricGuitarService,ElectricGuitarService>();
-builder.Services.AddScoped<IClassicGuitarRepostory, ClassicGuitarRepostory>();
-builder.Services.AddScoped<IClassicGuitarService, ClassicGuitarService>();
-builder.Services.AddScoped<IAcousticGuitarRepostory, AcousticGuitarRepostory>();
-builder.Services.AddScoped<IAcousticGuitarService, AcousticGuitarService>();
-builder.Services.AddScoped<IUserRepostory, UserRepostory>();
-builder.Services.AddScoped<IUserService,UserService>();
+builder.Services.AddScoped<BassGuitarRepostory,EFBassGuitarRepostory>();
+builder.Services.AddScoped<BassGuitarService,BassGuitarAppService>();
+builder.Services.AddScoped<ElectriceGuitarRepostory, EFElectricGuitarRepostry>();
+builder.Services.AddScoped<ElectricGuitarService,ElectricGuitarAppService>();
+builder.Services.AddScoped<ClassicGuitarRepostory, EFClassicGuitarRepostory>();
+builder.Services.AddScoped<ClassicGuitarService, ClassicGuitarAppService>();
+builder.Services.AddScoped<AcousticGuitarRepostory, EFAcousticGuitarRepostory>();
+builder.Services.AddScoped<AcousticGuitarService, AcousticGuitarAppService>();
+builder.Services.AddScoped<UserRepostory, EFUserRepostory>();
+builder.Services.AddScoped<UserService,UserAppService>();
 
 
 

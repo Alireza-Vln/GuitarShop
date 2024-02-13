@@ -2,7 +2,7 @@
 
 namespace OnlineShopGuitar.Maps
 {
-    public interface IAcousticGuitarRepostory
+    public interface AcousticGuitarRepostory
     {
         void AddAcoustic(AcousticGuitar acoustic);
         List<AcousticGuitar> GetAllAcoustic();
