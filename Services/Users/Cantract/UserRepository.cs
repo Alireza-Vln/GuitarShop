@@ -2,7 +2,7 @@
 
 namespace OnlineShopGuitar.Maps
 {
-    public interface UserRepostory
+    public interface UserRepository
     {
         void AddUser(User user);
 

@@ -8,12 +8,12 @@ namespace OnlineShopGuitar.Services
 {
     public class AcousticGuitarAppService : AcousticGuitarService
     {
-        private readonly AcousticGuitarRepostory _repostory;
+        private readonly AcousticGuitarRepository _repository;
         private readonly UnitOfWork _unitOfWork;
-        public AcousticGuitarAppService(AcousticGuitarRepostory repostory,UnitOfWork unitOfWork)
+        public AcousticGuitarAppService(AcousticGuitarRepository repostory,UnitOfWork unitOfWork)
         {
 
-            _repostory = repostory;
+            _repository = repostory;
             _unitOfWork = unitOfWork;
         }
         public async Task AddAcoustic(AddAcousticGuitarDto dto)
@@ -25,26 +25,37 @@ namespace OnlineShopGuitar.Services
                 Count = dto.Count,
                 Price = dto.Price,
             };
-            _repostory.AddAcoustic(acoustic);
+            _repository.AddAcoustic(acoustic);
            await _unitOfWork.Complete();
         }
 
         public async Task <List<AcousticGuitar>> DeleteAcoustic(DeleteAcousticGuitarDto dto)
         {
-    
-           return _repostory.DeleteAcoustic(dto.AcousticId);
+            if(_repository.IsExistGuitar(dto.AcousticId)==null)
+            {
+                throw new Exception("Not Found");
+            }
+
+          return _repository.DeleteAcoustic(_repository.IsExistGuitar(dto.AcousticId));
            //await _unitOfWork.Complete();
            
         }
 
         public async Task<List<AcousticGuitar>> GetAllAcousticGuitars()
         {
-            return _repostory.GetAllAcoustic();
+            return _repository.GetAllAcoustic();
         }
 
         public async Task UpdateAcousticGuitar(UpdateAcousticGuitarDto dto)
         {
-            _repostory.UpadateAcoustic(dto.AcousticId,dto.AcousticPrice);
+            if(_repository.IsExistGuitar(dto.AcousticId) == null)
+            {
+                throw new Exception("Not Found");
+            }
+            _repository.UpadateAcoustic
+                (_repository.IsExistGuitar(dto.AcousticId)
+                ,dto.AcousticPrice);
+
           await _unitOfWork.Complete();
         }
     }

@@ -8,41 +8,52 @@ namespace OnlineShopGuitar.Services
 {
     public class ElectricGuitarAppService : ElectricGuitarService
     {
-        private readonly ElectriceGuitarRepostory _electriceRepostory;
+        private readonly ElectriceGuitarRepository _repository;
         private readonly UnitOfWork _unitOfWork;
-        public ElectricGuitarAppService(ElectriceGuitarRepostory electriceGuitar,UnitOfWork unitOfWork)
+        public ElectricGuitarAppService(ElectriceGuitarRepository electriceGuitar,UnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
-            _electriceRepostory = electriceGuitar;
+            _repository = electriceGuitar;
         }
         public async Task AddElectric(AddElecetricGuitarDto dto)
         {
-            var electric = new ElectircGuitar
+            var electric = new ElectricGuitar
             {
                 Brand = dto.Brand,
                 Model = dto.Model,
                 Count = dto.Count,
                 Price = dto.Price,
             };
-            _electriceRepostory.AddElectric(electric);
+            _repository.AddElectric(electric);
             await _unitOfWork.Complete();
         }
 
-        public async Task<List<ElectircGuitar>> DeleteElectircGuitars(DeleteElectricGuitarDto dto)
+        public async Task<List<ElectricGuitar>> DeleteElectircGuitars(DeleteElectricGuitarDto dto)
         {
-            return _electriceRepostory.DeleteElectircGuitars(dto.ElectricId);
+            if(_repository.ISExistGuitar(dto.ElectricId)==null)
+            {
+                throw new Exception("not Found");
+            }
+
+            return _repository.DeleteElectircGuitars
+                (_repository.ISExistGuitar(dto.ElectricId));
             
         }
 
-        public async Task<List<ElectircGuitar>> GetElectircGuitars()
+        public async Task<List<ElectricGuitar>> GetElectircGuitars()
         {
-            return _electriceRepostory.GetElectric();
+            return _repository.GetElectric();
         }
 
     
         public async Task UpdateElectircGuitar(UpdateElectricGuitarDto dto)
         {
-            _electriceRepostory.UpadateElectricGuitarPrice(dto.ElectricId, dto.ElectricePrice);
+            if (_repository.ISExistGuitar(dto.ElectricId) == null)
+            {
+                throw new Exception("not Found");
+            }
+            _repository.UpadateElectricGuitarPrice
+                (_repository.ISExistGuitar(dto.ElectricId), dto.ElectricePrice);
             await _unitOfWork.Complete();
 
         }

@@ -7,8 +7,8 @@ namespace OnlineShopGuitar.Services
 {
     public class UserAppService : UserService
     {
-        private readonly UserRepostory _UserRepostory;
-        public UserAppService(UserRepostory userRepostory)
+        private readonly UserRepository _UserRepostory;
+        public UserAppService(UserRepository userRepostory)
         {
             _UserRepostory = userRepostory;
         }

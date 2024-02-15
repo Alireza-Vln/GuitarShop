@@ -7,7 +7,7 @@ namespace OnlineShopGuitar.Maps
     public class EfDbContext:DbContext
     {
         public DbSet<BassGuitar> BassGuitars { get; set; }
-        public DbSet<ElectircGuitar> ElectricGuitars { get; set; }
+        public DbSet<ElectricGuitar> ElectricGuitars { get; set; }
         public DbSet<ClassicGuitar> ClassicGuitars { get; set; }
         public DbSet<AcousticGuitar> AcousticGuitars { get; set; }
         public DbSet<User> Users { get; set; }

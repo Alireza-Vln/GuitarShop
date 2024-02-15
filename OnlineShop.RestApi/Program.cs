@@ -14,16 +14,16 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<EfDbContext>();
-builder.Services.AddScoped<BassGuitarRepostory,EFBassGuitarRepostory>();
+builder.Services.AddScoped<BassGuitarRepository,EFBassGuitarRepository>();
 builder.Services.AddScoped<BassGuitarService,BassGuitarAppService>();
-builder.Services.AddScoped<ElectriceGuitarRepostory, EFElectricGuitarRepostry>();
+builder.Services.AddScoped<ElectriceGuitarRepository, EFElectricGuitarRepository>();
 builder.Services.AddScoped<ElectricGuitarService,ElectricGuitarAppService>();
-builder.Services.AddScoped<ClassicGuitarRepostory, EFClassicGuitarRepostory>();
+builder.Services.AddScoped<ClassicGuitarRepository, EFClassicGuitarRepository>();
 builder.Services.AddScoped<ClassicGuitarService, ClassicGuitarAppService>();
-builder.Services.AddScoped<AcousticGuitarRepostory, EFAcousticGuitarRepostory>();
+builder.Services.AddScoped<AcousticGuitarRepository, EFAcousticGuitarRepository>();
 builder.Services.AddScoped<AcousticGuitarService, AcousticGuitarAppService>();
 builder.Services.AddScoped<UnitOfWork, EFUnitOfWork>();
-builder.Services.AddScoped<UserRepostory, EFUserRepostory>();
+builder.Services.AddScoped<UserRepository, EFUserRepository>();
 builder.Services.AddScoped<UserService,UserAppService>();
 
 

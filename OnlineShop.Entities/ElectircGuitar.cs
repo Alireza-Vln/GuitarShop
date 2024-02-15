@@ -1,6 +1,6 @@
 ﻿namespace OnlineShopGuitar.Entities
 {
-    public class ElectircGuitar
+    public class ElectricGuitar
     {
         public int Id { get; set; }
         public string Brand { get; set; }

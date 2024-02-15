@@ -22,13 +22,13 @@ namespace OnlineShopGuitar.Controllers
         }
         [HttpGet("Get-AllElectricGuitar")]
 
-        public async Task<List<ElectircGuitar>> GetElectircGuitars()
+        public async Task<List<ElectricGuitar>> GetElectircGuitars()
         {
             return await _service.GetElectircGuitars();
         }
 
         [HttpDelete("Delete-ElectricGuitar")]
-        public async Task<List<ElectircGuitar>> DeleteElecrticGuiatr([FromQuery]DeleteElectricGuitarDto dto)
+        public async Task<List<ElectricGuitar>> DeleteElecrticGuiatr([FromQuery]DeleteElectricGuitarDto dto)
         {
             return await _service.DeleteElectircGuitars(dto);
         }

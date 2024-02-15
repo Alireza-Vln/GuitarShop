@@ -8,12 +8,12 @@ namespace OnlineShopGuitar.Services
 {
     public class ClassicGuitarAppService : ClassicGuitarService
     {
-       private readonly ClassicGuitarRepostory _Classicrepostory;
+       private readonly ClassicGuitarRepository _repository;
         private readonly UnitOfWork _UnitOfWork;
-        public ClassicGuitarAppService(ClassicGuitarRepostory classicrepostory,UnitOfWork unitOfWork)
+        public ClassicGuitarAppService(ClassicGuitarRepository classicrepostory,UnitOfWork unitOfWork)
         {
             _UnitOfWork = unitOfWork;
-            _Classicrepostory = classicrepostory;
+            _repository = classicrepostory;
         }
         public async Task AddClassic(AddClassicGuitarDto dto)
         {
@@ -25,23 +25,32 @@ namespace OnlineShopGuitar.Services
                 Price = dto.Price,
 
             };
-            _Classicrepostory.AddClassic(classic);
+            _repository.AddClassic(classic);
             await _UnitOfWork.Complete();
         }
 
         public async Task <List<ClassicGuitar>> DeleteClassicGuitars(DeleteClassicGuitarDto dto)
         {
-            return _Classicrepostory.DeleteClassicGuitars(dto.ClassicId);
+            if (_repository.IsExistGuitar(dto.ClassicId) == null)
+            {
+                throw new Exception("Not found");
+            }
+            return _repository.DeleteClassicGuitars
+                (_repository.IsExistGuitar(dto.ClassicId));
         }
 
         public async Task <List<ClassicGuitar>> GetClassicGuitars()
         {
-            return _Classicrepostory.GetClassicGuitars();
+            return _repository.GetClassicGuitars();
         }
 
         public async Task UpdateClassicGuitar(UpdateClassicGuitarDto dto)
         {
-            _Classicrepostory.UpdateClassicGuitar(dto.ClassicId,dto.ClassicPrice);
+            if (_repository.IsExistGuitar(dto.ClassicId) == null)
+            {
+                throw new Exception("Not found");
+            }
+            _repository.UpdateClassicGuitar(_repository.IsExistGuitar(dto.ClassicId), dto.ClassicPrice);
             await _UnitOfWork.Complete();
         }
     }

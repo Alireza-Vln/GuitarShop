@@ -8,13 +8,13 @@ namespace OnlineShopGuitar.Services
 {
     public class BassGuitarAppService : BassGuitarService
     {
-        private readonly BassGuitarRepostory _bassGuitarRepostory;
+        private readonly BassGuitarRepository _repository;
         private readonly UnitOfWork _unitOfWork;
 
-        public BassGuitarAppService(BassGuitarRepostory bassGuitarRepostory,UnitOfWork unitOfWork)
+        public BassGuitarAppService(BassGuitarRepository bassGuitarRepostory,UnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
-            _bassGuitarRepostory = bassGuitarRepostory;
+            _repository = bassGuitarRepostory;
         }
 
         public async Task AddBass(AddGuitarBassDto dto)
@@ -27,24 +27,32 @@ namespace OnlineShopGuitar.Services
                 Price = dto.Price,
             };
 
-            _bassGuitarRepostory.AddBass(bass);
+            _repository.AddBass(bass);
             await _unitOfWork.Complete();
 
         }
 
         public async Task <List<BassGuitar>> DeleteBassGuitar(DeleteBassGuitarDto dto)
         {
-             return _bassGuitarRepostory.DeleteBassGuitar(dto.BassId);
+            if(_repository.IsExistGuitar(dto.BassId) == null) 
+            {
+                throw new Exception("Not Found");
+            }
+             return _repository.DeleteBassGuitar(_repository.IsExistGuitar(dto.BassId));
         }
 
         public async Task< List<BassGuitar>> GetAllBassGuitars()
         {
-            return _bassGuitarRepostory.GetAllBassGuitar();
+            return _repository.GetAllBassGuitar();
         }
 
         public async Task UpdateBassGuitar(UpdateBassGuitarPriceDto dto)
         {
-            _bassGuitarRepostory.UpdateBassPrice(dto.BassId, dto.BassPrice);
+            if (_repository.IsExistGuitar(dto.BassId) == null)
+            {
+                throw new Exception("Not Found");
+            }
+            _repository.UpdateBassPrice(_repository.IsExistGuitar(dto.BassId), dto.BassPrice);
             await _unitOfWork.Complete();
         }
     }
