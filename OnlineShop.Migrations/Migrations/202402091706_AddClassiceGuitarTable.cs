@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Migrations
+namespace OnlineShop.Migrations.Migrations
 {
     [Migration(202402091706)]
     public class _202402091706_AddClassiceGuitarTable : Migration
@@ -24,6 +24,6 @@ namespace Migrations
             Delete.Table("ClassicGuitars");
         }
 
-      
+
     }
 }

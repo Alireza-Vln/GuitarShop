@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Migrations
+namespace OnlineShop.Migrations.Migrations
 {
     [Migration(202402101212)]
     public class _202402101212_AddAcousticGuitarTable : Migration
@@ -25,6 +25,6 @@ namespace Migrations
             Delete.Table("AcousticGuitars");
         }
 
-       
+
     }
 }

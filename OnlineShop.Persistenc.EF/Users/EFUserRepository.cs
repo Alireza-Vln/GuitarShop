@@ -13,7 +13,7 @@ namespace OnlineShopGuitar.Maps
         public void AddUser(User user)
         {
             _Context.Users.Add(user);
-            _Context.SaveChanges();
+           
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
+using OnlineShop.Entities;
 using OnlineShopGuitar.Entities;
 
 namespace OnlineShopGuitar.Maps
@@ -10,6 +11,7 @@ namespace OnlineShopGuitar.Maps
         public DbSet<ElectricGuitar> ElectricGuitars { get; set; }
         public DbSet<ClassicGuitar> ClassicGuitars { get; set; }
         public DbSet<AcousticGuitar> AcousticGuitars { get; set; }
+        public DbSet<Factor> Factors { get; set; }
         public DbSet<User> Users { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
