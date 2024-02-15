@@ -29,6 +29,7 @@ namespace OnlineShop.Migrations.Migrations
         public override void Down()
         {
             Delete.Table("Users");
+            Delete.Table("Factors");
         }
 
 

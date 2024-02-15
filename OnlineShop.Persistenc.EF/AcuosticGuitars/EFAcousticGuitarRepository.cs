@@ -1,4 +1,5 @@
-﻿using OnlineShopGuitar.Entities;
+﻿using OnlineShop.Entities;
+using OnlineShopGuitar.Entities;
 
 namespace OnlineShopGuitar.Maps
 {
@@ -12,6 +13,7 @@ namespace OnlineShopGuitar.Maps
 
         public void AddAcoustic(AcousticGuitar acoustic)
         {
+           _context.Guitars.FirstOrDefault(_ => _.AcousticGuitars.Add(acoustic));
             _context.AcousticGuitars.Add(acoustic);
            
         }

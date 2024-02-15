@@ -1,4 +1,6 @@
-﻿namespace OnlineShopGuitar.Entities
+﻿using OnlineShop.Entities;
+
+namespace OnlineShopGuitar.Entities
 {
     public class AcousticGuitar
     {
@@ -8,5 +10,7 @@
         public string Model { get; set; }
         public decimal Price { get; set; }
         public int Count { get; set; }
+      //  public Guitar Guitar { get; set; }
+       // public int GuitarId { get; set; }
     }   
 }

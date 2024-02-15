@@ -1,4 +1,5 @@
 ﻿using Cantracts;
+using OnlineShop.Entities;
 using OnlineShopGuitar.DTO;
 using OnlineShopGuitar.Entities;
 using OnlineShopGuitar.Maps;
@@ -18,13 +19,15 @@ namespace OnlineShopGuitar.Services
         }
         public async Task AddAcoustic(AddAcousticGuitarDto dto)
         {
+
             var acoustic = new AcousticGuitar
             {
                 Brand = dto.Brand,
                 Model = dto.Model,
                 Count = dto.Count,
-                Price = dto.Price,
+                Price = dto.Price,  
             };
+            
             _repository.AddAcoustic(acoustic);
            await _unitOfWork.Complete();
         }
