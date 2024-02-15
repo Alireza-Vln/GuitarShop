@@ -1,4 +1,5 @@
-﻿using OnlineShopGuitar.DTO;
+﻿using Cantracts;
+using OnlineShopGuitar.DTO;
 using OnlineShopGuitar.Entities;
 using OnlineShopGuitar.Maps;
 using OnlineShopGuitar.Services.Contracts;
@@ -8,8 +9,10 @@ namespace OnlineShopGuitar.Services
     public class ClassicGuitarAppService : ClassicGuitarService
     {
        private readonly ClassicGuitarRepostory _Classicrepostory;
-        public ClassicGuitarAppService(ClassicGuitarRepostory classicrepostory)
+        private readonly UnitOfWork _UnitOfWork;
+        public ClassicGuitarAppService(ClassicGuitarRepostory classicrepostory,UnitOfWork unitOfWork)
         {
+            _UnitOfWork = unitOfWork;
             _Classicrepostory = classicrepostory;
         }
         public async Task AddClassic(AddClassicGuitarDto dto)
@@ -23,6 +26,7 @@ namespace OnlineShopGuitar.Services
 
             };
             _Classicrepostory.AddClassic(classic);
+            await _UnitOfWork.Complete();
         }
 
         public async Task <List<ClassicGuitar>> DeleteClassicGuitars(DeleteClassicGuitarDto dto)
@@ -38,6 +42,7 @@ namespace OnlineShopGuitar.Services
         public async Task UpdateClassicGuitar(UpdateClassicGuitarDto dto)
         {
             _Classicrepostory.UpdateClassicGuitar(dto.ClassicId,dto.ClassicPrice);
+            await _UnitOfWork.Complete();
         }
     }
 }

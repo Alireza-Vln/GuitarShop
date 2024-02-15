@@ -5,6 +5,6 @@ namespace OnlineShopGuitar.Services.Contracts
 {
     public interface UserService
     {
-      public void AddUser(AddUserDto dto);
+      public Task AddUser(AddUserDto dto);
     }
 }

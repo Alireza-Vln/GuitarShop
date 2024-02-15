@@ -13,7 +13,7 @@ namespace OnlineShopGuitar.Services
             _UserRepostory = userRepostory;
         }
 
-        public void AddUser(AddUserDto user)
+        public async Task AddUser(AddUserDto user)
         {
             var User = new User()
             {

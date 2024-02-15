@@ -17,3 +17,5 @@ C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\OnlineShop.Persist
 C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\OnlineShop.Persistenc.EF\obj\Debug\net7.0\OnlineShop.Persistence.EF.pdb
 C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\OnlineShop.Persistenc.EF\obj\Debug\net7.0\OnlineShop.Persistence.EF.genruntimeconfig.cache
 C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\OnlineShop.Persistenc.EF\obj\Debug\net7.0\ref\OnlineShop.Persistence.EF.dll
+C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\OnlineShop.Persistenc.EF\bin\Debug\net7.0\Cantracts.dll
+C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\OnlineShop.Persistenc.EF\bin\Debug\net7.0\Cantracts.pdb

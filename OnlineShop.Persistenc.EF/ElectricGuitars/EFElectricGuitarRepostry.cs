@@ -14,7 +14,7 @@ namespace OnlineShopGuitar.Maps
         public void AddElectric(ElectircGuitar electircGuitar)
         {
             _context.ElectricGuitars.Add(electircGuitar);
-            _context.SaveChanges();
+            
         }
 
         public List<ElectircGuitar> DeleteElectircGuitars(int Id)
@@ -34,7 +34,7 @@ namespace OnlineShopGuitar.Maps
         {
             var electric = _context.ElectricGuitars.First(_ => _.Id == Id);
             electric.Price = Price;
-            _context.SaveChanges();
+            
         }
        
     }

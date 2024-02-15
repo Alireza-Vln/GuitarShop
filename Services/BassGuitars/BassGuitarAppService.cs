@@ -1,4 +1,5 @@
-﻿using OnlineShopGuitar.DTO;
+﻿using Cantracts;
+using OnlineShopGuitar.DTO;
 using OnlineShopGuitar.Entities;
 using OnlineShopGuitar.Maps;
 using OnlineShopGuitar.Services.Contracts;
@@ -8,9 +9,11 @@ namespace OnlineShopGuitar.Services
     public class BassGuitarAppService : BassGuitarService
     {
         private readonly BassGuitarRepostory _bassGuitarRepostory;
+        private readonly UnitOfWork _unitOfWork;
 
-        public BassGuitarAppService(BassGuitarRepostory bassGuitarRepostory)
+        public BassGuitarAppService(BassGuitarRepostory bassGuitarRepostory,UnitOfWork unitOfWork)
         {
+            _unitOfWork = unitOfWork;
             _bassGuitarRepostory = bassGuitarRepostory;
         }
 
@@ -25,6 +28,7 @@ namespace OnlineShopGuitar.Services
             };
 
             _bassGuitarRepostory.AddBass(bass);
+            await _unitOfWork.Complete();
 
         }
 
@@ -41,6 +45,7 @@ namespace OnlineShopGuitar.Services
         public async Task UpdateBassGuitar(UpdateBassGuitarPriceDto dto)
         {
             _bassGuitarRepostory.UpdateBassPrice(dto.BassId, dto.BassPrice);
+            await _unitOfWork.Complete();
         }
     }
 }

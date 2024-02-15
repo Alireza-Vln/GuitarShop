@@ -13,7 +13,7 @@ namespace OnlineShopGuitar.Maps
         public void AddClassic(ClassicGuitar classicGuitar)
         {
            _Context.ClassicGuitars.Add(classicGuitar);
-            _Context.SaveChanges();
+          
         }
 
         public List<ClassicGuitar> DeleteClassicGuitars(int id)
@@ -37,7 +37,7 @@ namespace OnlineShopGuitar.Maps
                 throw new Exception("not Found");
             }
             classic.Price = price;  
-            _Context.SaveChanges();
+           
         }
     }
 }

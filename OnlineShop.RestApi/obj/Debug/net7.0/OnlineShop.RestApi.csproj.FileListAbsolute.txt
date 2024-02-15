@@ -74,3 +74,6 @@ C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\OnlineShop.RestApi
 C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\OnlineShop.RestApi\obj\Debug\net7.0\OnlineShop.RestApi.pdb
 C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\OnlineShop.RestApi\obj\Debug\net7.0\OnlineShop.RestApi.genruntimeconfig.cache
 C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\OnlineShop.RestApi\obj\Debug\net7.0\ref\OnlineShop.RestApi.dll
+C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\OnlineShop.RestApi\bin\Debug\net7.0\Cantracts.dll
+C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\OnlineShop.RestApi\bin\Debug\net7.0\Cantracts.pdb
+C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\OnlineShop.RestApi\obj\Debug\net7.0\OnlineShop.RestApi.MvcApplicationPartsAssemblyInfo.cs

@@ -8,10 +8,16 @@
     ".NETCoreApp,Version=v7.0": {
       "OnlineShop.Services/1.0.0": {
         "dependencies": {
+          "Cantracts": "1.0.0",
           "OnlineShop.Entities": "1.0.0"
         },
         "runtime": {
           "OnlineShop.Services.dll": {}
+        }
+      },
+      "Cantracts/1.0.0": {
+        "runtime": {
+          "Cantracts.dll": {}
         }
       },
       "OnlineShop.Entities/1.0.0": {
@@ -23,6 +29,11 @@
   },
   "libraries": {
     "OnlineShop.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Cantracts/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

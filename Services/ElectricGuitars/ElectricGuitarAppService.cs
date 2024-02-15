@@ -1,4 +1,5 @@
-﻿using OnlineShopGuitar.DTO;
+﻿using Cantracts;
+using OnlineShopGuitar.DTO;
 using OnlineShopGuitar.Entities;
 using OnlineShopGuitar.Maps;
 using OnlineShopGuitar.Services.Contracts;
@@ -8,8 +9,10 @@ namespace OnlineShopGuitar.Services
     public class ElectricGuitarAppService : ElectricGuitarService
     {
         private readonly ElectriceGuitarRepostory _electriceRepostory;
-        public ElectricGuitarAppService(ElectriceGuitarRepostory electriceGuitar)
+        private readonly UnitOfWork _unitOfWork;
+        public ElectricGuitarAppService(ElectriceGuitarRepostory electriceGuitar,UnitOfWork unitOfWork)
         {
+            _unitOfWork = unitOfWork;
             _electriceRepostory = electriceGuitar;
         }
         public async Task AddElectric(AddElecetricGuitarDto dto)
@@ -22,6 +25,7 @@ namespace OnlineShopGuitar.Services
                 Price = dto.Price,
             };
             _electriceRepostory.AddElectric(electric);
+            await _unitOfWork.Complete();
         }
 
         public async Task<List<ElectircGuitar>> DeleteElectircGuitars(DeleteElectricGuitarDto dto)
@@ -39,6 +43,7 @@ namespace OnlineShopGuitar.Services
         public async Task UpdateElectircGuitar(UpdateElectricGuitarDto dto)
         {
             _electriceRepostory.UpadateElectricGuitarPrice(dto.ElectricId, dto.ElectricePrice);
+            await _unitOfWork.Complete();
 
         }
     }

@@ -13,3 +13,5 @@ C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\Services\obj\Debug
 C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\Services\obj\Debug\net7.0\refint\OnlineShop.Services.dll
 C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\Services\obj\Debug\net7.0\OnlineShop.Services.pdb
 C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\Services\obj\Debug\net7.0\ref\OnlineShop.Services.dll
+C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\Services\bin\Debug\net7.0\Cantracts.dll
+C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\Services\bin\Debug\net7.0\Cantracts.pdb

@@ -1,3 +1,5 @@
+using Cantracts;
+using OnlineShop.Persistence.EF;
 using OnlineShopGuitar.Entities;
 using OnlineShopGuitar.Maps;
 using OnlineShopGuitar.Services;
@@ -20,6 +22,7 @@ builder.Services.AddScoped<ClassicGuitarRepostory, EFClassicGuitarRepostory>();
 builder.Services.AddScoped<ClassicGuitarService, ClassicGuitarAppService>();
 builder.Services.AddScoped<AcousticGuitarRepostory, EFAcousticGuitarRepostory>();
 builder.Services.AddScoped<AcousticGuitarService, AcousticGuitarAppService>();
+builder.Services.AddScoped<UnitOfWork, EFUnitOfWork>();
 builder.Services.AddScoped<UserRepostory, EFUserRepostory>();
 builder.Services.AddScoped<UserService,UserAppService>();
 

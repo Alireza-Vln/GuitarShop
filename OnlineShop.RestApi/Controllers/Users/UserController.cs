@@ -16,9 +16,9 @@ namespace OnlineShopGuitar.Controllers
 
         [HttpPost("Add-User")]
 
-        public void AddUser([FromBody]AddUserDto dto)
+        public async Task AddUser([FromBody]AddUserDto dto)
         {
-            _service.AddUser(dto);
+            await _service.AddUser(dto);
         }
 
     }

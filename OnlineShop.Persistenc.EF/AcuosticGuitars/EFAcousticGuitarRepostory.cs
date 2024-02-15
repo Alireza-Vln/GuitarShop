@@ -7,13 +7,13 @@ namespace OnlineShopGuitar.Maps
         private readonly EfDbContext _context;
         public EFAcousticGuitarRepostory(EfDbContext context)
         {
-            _context = new EfDbContext();
+            _context = context;
         }
 
         public void AddAcoustic(AcousticGuitar acoustic)
         {
             _context.AcousticGuitars.Add(acoustic);
-            _context.SaveChanges();
+           
         }
 
         public List<AcousticGuitar> GetAllAcoustic()
@@ -37,7 +37,7 @@ namespace OnlineShopGuitar.Maps
                 throw new Exception("not Found");
             }
             acoustic.Price = price;
-            _context.SaveChanges();
+            
         }
     }
 }

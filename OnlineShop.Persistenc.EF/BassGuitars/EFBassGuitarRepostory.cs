@@ -12,7 +12,7 @@ namespace OnlineShopGuitar.Maps
         public void AddBass(BassGuitar bassGuitar)
         {
           _dbContext.BassGuitars.Add(bassGuitar);
-            _dbContext.SaveChanges();
+            
         }
 
         public List<BassGuitar> DeleteBassGuitar(int id)
@@ -36,7 +36,7 @@ namespace OnlineShopGuitar.Maps
                 throw new Exception("not Found");
             }
           bass.Price = price;
-         _dbContext.SaveChanges();
+         
         }
     }
 }
