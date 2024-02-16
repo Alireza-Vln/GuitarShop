@@ -3265,19 +3265,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\amirv\\.nuget\\packages\\": {}
+    "C:\\Users\\welldone\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\Api\\New folder\\GuitarShop\\OnlineShop.Migrations\\OnlineShop.Migrations.csproj",
+      "projectUniqueName": "C:\\Users\\welldone\\Desktop\\Alireza\\GuitarShop\\OnlineShopGuitar\\OnlineShop.Migrations\\OnlineShop.Migrations.csproj",
       "projectName": "OnlineShop.Migrations",
-      "projectPath": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\Api\\New folder\\GuitarShop\\OnlineShop.Migrations\\OnlineShop.Migrations.csproj",
-      "packagesPath": "C:\\Users\\amirv\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\Api\\New folder\\GuitarShop\\OnlineShop.Migrations\\obj\\",
+      "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\GuitarShop\\OnlineShopGuitar\\OnlineShop.Migrations\\OnlineShop.Migrations.csproj",
+      "packagesPath": "C:\\Users\\welldone\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\welldone\\Desktop\\Alireza\\GuitarShop\\OnlineShopGuitar\\OnlineShop.Migrations\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\amirv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\welldone\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3328,7 +3328,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

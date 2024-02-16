@@ -1,4 +1,5 @@
-﻿using OnlineShopGuitar.Entities;
+﻿using OnlineShop.Entities;
+using OnlineShopGuitar.Entities;
 
 namespace OnlineShopGuitar.Maps
 {
@@ -45,5 +46,9 @@ namespace OnlineShopGuitar.Maps
             return _context.ElectricGuitars.FirstOrDefault(_ => _.Id == id);
         }
 
+        public void AddGuitar(Guitar guitar)
+        {
+           _context.Guitars.Add(guitar);
+        }
     }
 }

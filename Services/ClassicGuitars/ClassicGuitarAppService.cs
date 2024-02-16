@@ -1,4 +1,5 @@
 ﻿using Cantracts;
+using OnlineShop.Entities;
 using OnlineShopGuitar.DTO;
 using OnlineShopGuitar.Entities;
 using OnlineShopGuitar.Maps;
@@ -9,25 +10,47 @@ namespace OnlineShopGuitar.Services
     public class ClassicGuitarAppService : ClassicGuitarService
     {
        private readonly ClassicGuitarRepository _repository;
-        private readonly UnitOfWork _UnitOfWork;
+        private readonly UnitOfWork _unitOfWork;
         public ClassicGuitarAppService(ClassicGuitarRepository classicrepostory,UnitOfWork unitOfWork)
         {
-            _UnitOfWork = unitOfWork;
+            _unitOfWork = unitOfWork;
             _repository = classicrepostory;
         }
         public async Task AddClassic(AddClassicGuitarDto dto)
         {
-            var classic = new ClassicGuitar
+            await _unitOfWork.Begin();
+            try
             {
-                Brand = dto.Brand,
-                Model = dto.Model,
-                Count = dto.Count,
-                Price = dto.Price,
+                var classic = new ClassicGuitar
+                {
+                    Brand = dto.Brand,
+                    Model = dto.Model,
+                    Count = dto.Count,
+                    Price = dto.Price,
 
-            };
-            _repository.AddClassic(classic);
-            await _UnitOfWork.Complete();
+
+                };
+                _repository.AddClassic(classic);
+                await _unitOfWork.Complete();
+                var guitar = new Guitar
+                {
+                    GuitarBrand = dto.Brand,
+                    GuitarModel = dto.Model,
+                    Price = dto.Price,
+
+                };
+                _repository.AddGuitar(guitar);
+                await _unitOfWork.Complete();
+                await _unitOfWork.Commit();
+
+            }
+            catch
+            {
+
+                await _unitOfWork.RollBack();
+            }
         }
+        
 
         public async Task <List<ClassicGuitar>> DeleteClassicGuitars(DeleteClassicGuitarDto dto)
         {
@@ -51,7 +74,7 @@ namespace OnlineShopGuitar.Services
                 throw new Exception("Not found");
             }
             _repository.UpdateClassicGuitar(_repository.IsExistGuitar(dto.ClassicId), dto.ClassicPrice);
-            await _UnitOfWork.Complete();
+            await _unitOfWork.Complete();
         }
     }
 }

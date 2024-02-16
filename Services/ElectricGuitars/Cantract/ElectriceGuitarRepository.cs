@@ -1,4 +1,5 @@
-﻿using OnlineShopGuitar.Entities;
+﻿using OnlineShop.Entities;
+using OnlineShopGuitar.Entities;
 
 namespace OnlineShopGuitar.Maps
 {
@@ -6,6 +7,7 @@ namespace OnlineShopGuitar.Maps
     {
         public ElectricGuitar ISExistGuitar(int id);
         void AddElectric(ElectricGuitar electircGuitar);
+        void AddGuitar(Guitar guitar);
         List <ElectricGuitar> GetElectric();
         List <ElectricGuitar> DeleteElectircGuitars(ElectricGuitar electricGuitar);
         void UpadateElectricGuitarPrice(ElectricGuitar electricGuitar,decimal Price);

@@ -1,4 +1,5 @@
-﻿using OnlineShopGuitar.Entities;
+﻿using OnlineShop.Entities;
+using OnlineShopGuitar.Entities;
 
 namespace OnlineShopGuitar.Maps
 {
@@ -37,6 +38,11 @@ namespace OnlineShopGuitar.Maps
         public ClassicGuitar IsExistGuitar(int id)
         {
             return _Context.ClassicGuitars.FirstOrDefault(_ => _.Id == id);
+        }
+
+        public void AddGuitar(Guitar guitar)
+        {
+          _Context.Guitars.Add(guitar);
         }
     }
 }

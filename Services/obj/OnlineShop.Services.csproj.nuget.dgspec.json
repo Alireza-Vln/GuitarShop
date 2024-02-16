@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\Api\\New folder\\GuitarShop\\Services\\OnlineShop.Services.csproj": {}
+    "C:\\Users\\welldone\\Desktop\\Alireza\\GuitarShop\\OnlineShopGuitar\\Services\\OnlineShop.Services.csproj": {}
   },
   "projects": {
-    "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\Api\\New folder\\GuitarShop\\Cantracts\\Cantracts.csproj": {
+    "C:\\Users\\welldone\\Desktop\\Alireza\\GuitarShop\\OnlineShopGuitar\\Cantracts\\Cantracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\Api\\New folder\\GuitarShop\\Cantracts\\Cantracts.csproj",
+        "projectUniqueName": "C:\\Users\\welldone\\Desktop\\Alireza\\GuitarShop\\OnlineShopGuitar\\Cantracts\\Cantracts.csproj",
         "projectName": "Cantracts",
-        "projectPath": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\Api\\New folder\\GuitarShop\\Cantracts\\Cantracts.csproj",
-        "packagesPath": "C:\\Users\\amirv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\Api\\New folder\\GuitarShop\\Cantracts\\obj\\",
+        "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\GuitarShop\\OnlineShopGuitar\\Cantracts\\Cantracts.csproj",
+        "packagesPath": "C:\\Users\\welldone\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\welldone\\Desktop\\Alireza\\GuitarShop\\OnlineShopGuitar\\Cantracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\amirv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\welldone\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,21 +55,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\Api\\New folder\\GuitarShop\\OnlineShop.Entities\\OnlineShop.Entities.csproj": {
+    "C:\\Users\\welldone\\Desktop\\Alireza\\GuitarShop\\OnlineShopGuitar\\OnlineShop.Entities\\OnlineShop.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\Api\\New folder\\GuitarShop\\OnlineShop.Entities\\OnlineShop.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\welldone\\Desktop\\Alireza\\GuitarShop\\OnlineShopGuitar\\OnlineShop.Entities\\OnlineShop.Entities.csproj",
         "projectName": "OnlineShop.Entities",
-        "projectPath": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\Api\\New folder\\GuitarShop\\OnlineShop.Entities\\OnlineShop.Entities.csproj",
-        "packagesPath": "C:\\Users\\amirv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\Api\\New folder\\GuitarShop\\OnlineShop.Entities\\obj\\",
+        "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\GuitarShop\\OnlineShopGuitar\\OnlineShop.Entities\\OnlineShop.Entities.csproj",
+        "packagesPath": "C:\\Users\\welldone\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\welldone\\Desktop\\Alireza\\GuitarShop\\OnlineShopGuitar\\OnlineShop.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\amirv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\welldone\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -110,21 +110,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\Api\\New folder\\GuitarShop\\Services\\OnlineShop.Services.csproj": {
+    "C:\\Users\\welldone\\Desktop\\Alireza\\GuitarShop\\OnlineShopGuitar\\Services\\OnlineShop.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\Api\\New folder\\GuitarShop\\Services\\OnlineShop.Services.csproj",
+        "projectUniqueName": "C:\\Users\\welldone\\Desktop\\Alireza\\GuitarShop\\OnlineShopGuitar\\Services\\OnlineShop.Services.csproj",
         "projectName": "OnlineShop.Services",
-        "projectPath": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\Api\\New folder\\GuitarShop\\Services\\OnlineShop.Services.csproj",
-        "packagesPath": "C:\\Users\\amirv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\Api\\New folder\\GuitarShop\\Services\\obj\\",
+        "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\GuitarShop\\OnlineShopGuitar\\Services\\OnlineShop.Services.csproj",
+        "packagesPath": "C:\\Users\\welldone\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\welldone\\Desktop\\Alireza\\GuitarShop\\OnlineShopGuitar\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\amirv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\welldone\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -138,11 +138,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\Api\\New folder\\GuitarShop\\Cantracts\\Cantracts.csproj": {
-                "projectPath": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\Api\\New folder\\GuitarShop\\Cantracts\\Cantracts.csproj"
+              "C:\\Users\\welldone\\Desktop\\Alireza\\GuitarShop\\OnlineShopGuitar\\Cantracts\\Cantracts.csproj": {
+                "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\GuitarShop\\OnlineShopGuitar\\Cantracts\\Cantracts.csproj"
               },
-              "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\Api\\New folder\\GuitarShop\\OnlineShop.Entities\\OnlineShop.Entities.csproj": {
-                "projectPath": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\Api\\New folder\\GuitarShop\\OnlineShop.Entities\\OnlineShop.Entities.csproj"
+              "C:\\Users\\welldone\\Desktop\\Alireza\\GuitarShop\\OnlineShopGuitar\\OnlineShop.Entities\\OnlineShop.Entities.csproj": {
+                "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\GuitarShop\\OnlineShopGuitar\\OnlineShop.Entities\\OnlineShop.Entities.csproj"
               }
             }
           }
@@ -172,7 +172,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

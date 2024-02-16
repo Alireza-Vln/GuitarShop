@@ -1,4 +1,5 @@
 ﻿using Cantracts;
+using OnlineShop.Entities;
 using OnlineShopGuitar.DTO;
 using OnlineShopGuitar.Entities;
 using OnlineShopGuitar.Maps;
@@ -19,16 +20,35 @@ namespace OnlineShopGuitar.Services
 
         public async Task AddBass(AddGuitarBassDto dto)
         {
-            var bass = new BassGuitar
+            await _unitOfWork.Begin();
+            try
             {
-                Brand = dto.Brand,
-                Model = dto.Model,
-                Count = dto.Count,
-                Price = dto.Price,
-            };
+                var bass = new BassGuitar
+                {
+                    Brand = dto.Brand,
+                    Model = dto.Model,
+                    Count = dto.Count,
+                    Price = dto.Price,
+                };
+                _repository.AddBass(bass);
+                await _unitOfWork.Complete();
+                var guitar = new Guitar
+                {
+                    GuitarBrand = dto.Brand,
+                    GuitarModel = dto.Model,
+                    Price = dto.Price,
 
-            _repository.AddBass(bass);
-            await _unitOfWork.Complete();
+                };
+                _repository.AddGuitar(guitar);
+                await _unitOfWork.Complete();
+                await _unitOfWork.Commit();
+
+            }
+            catch
+            {
+
+                await _unitOfWork.RollBack();
+            }
 
         }
 
