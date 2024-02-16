@@ -23,7 +23,10 @@ namespace OnlineShop.Migrations.Migrations
             Create.Table("Factors")
             .WithColumn("Id").AsInt32().Identity().PrimaryKey()
             .WithColumn("Name").AsString(50).NotNullable()
+            .WithColumn("Brand").AsString(50).NotNullable()
+            .WithColumn("Model").AsString(50).NotNullable()
             .WithColumn("CreateAt").AsDateTime().NotNullable()
+            .WithColumn("Price").AsDecimal(18,3).NotNullable()
             .WithColumn("UserId").AsInt32().NotNullable().ForeignKey();
         }
         public override void Down()

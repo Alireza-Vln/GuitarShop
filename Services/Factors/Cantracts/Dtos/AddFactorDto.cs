@@ -14,6 +14,7 @@ namespace OnlineShop.Services.Factors.Cantracts.Dtos
         public string LastName { get; set; }
         public DateTime CreateAt { get; set; }
         public int UserId { get; set; }
+
        // public User User { get; set; }
       //  public BassGuitar Guitar { get; set; }
 

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\welldone\\Desktop\\Alireza\\GuitarShop\\OnlineShopGuitar\\Cantracts\\Cantracts.csproj": {}
+    "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\Api\\New folder\\GuitarShop\\Cantracts\\Cantracts.csproj": {}
   },
   "projects": {
-    "C:\\Users\\welldone\\Desktop\\Alireza\\GuitarShop\\OnlineShopGuitar\\Cantracts\\Cantracts.csproj": {
+    "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\Api\\New folder\\GuitarShop\\Cantracts\\Cantracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\welldone\\Desktop\\Alireza\\GuitarShop\\OnlineShopGuitar\\Cantracts\\Cantracts.csproj",
+        "projectUniqueName": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\Api\\New folder\\GuitarShop\\Cantracts\\Cantracts.csproj",
         "projectName": "Cantracts",
-        "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\GuitarShop\\OnlineShopGuitar\\Cantracts\\Cantracts.csproj",
-        "packagesPath": "C:\\Users\\welldone\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\welldone\\Desktop\\Alireza\\GuitarShop\\OnlineShopGuitar\\Cantracts\\obj\\",
+        "projectPath": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\Api\\New folder\\GuitarShop\\Cantracts\\Cantracts.csproj",
+        "packagesPath": "C:\\Users\\amirv\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\Api\\New folder\\GuitarShop\\Cantracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\welldone\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amirv\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -13,9 +13,13 @@ namespace OnlineShopGuitar.Maps
 
         public void AddAcoustic(AcousticGuitar acoustic)
         {
-           _context.Guitars.FirstOrDefault(_ => _.AcousticGuitars.Add(acoustic));
+         
             _context.AcousticGuitars.Add(acoustic);
            
+        }
+        public void AddGuitar(Guitar guitar)
+        {
+            _context.Guitars.Add(guitar);
         }
 
         public List<AcousticGuitar> GetAllAcoustic()

@@ -9,3 +9,15 @@ C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\Cantracts\obj\Debu
 C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\Cantracts\obj\Debug\net7.0\refint\Cantracts.dll
 C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\Cantracts\obj\Debug\net7.0\Cantracts.pdb
 C:\Users\welldone\Desktop\Alireza\GuitarShop\OnlineShopGuitar\Cantracts\obj\Debug\net7.0\ref\Cantracts.dll
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\Api\New folder\GuitarShop\Cantracts\bin\Debug\net7.0\Cantracts.deps.json
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\Api\New folder\GuitarShop\Cantracts\bin\Debug\net7.0\Cantracts.dll
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\Api\New folder\GuitarShop\Cantracts\bin\Debug\net7.0\Cantracts.pdb
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\Api\New folder\GuitarShop\Cantracts\obj\Debug\net7.0\Cantracts.csproj.AssemblyReference.cache
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\Api\New folder\GuitarShop\Cantracts\obj\Debug\net7.0\Cantracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\Api\New folder\GuitarShop\Cantracts\obj\Debug\net7.0\Cantracts.AssemblyInfoInputs.cache
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\Api\New folder\GuitarShop\Cantracts\obj\Debug\net7.0\Cantracts.AssemblyInfo.cs
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\Api\New folder\GuitarShop\Cantracts\obj\Debug\net7.0\Cantracts.csproj.CoreCompileInputs.cache
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\Api\New folder\GuitarShop\Cantracts\obj\Debug\net7.0\Cantracts.dll
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\Api\New folder\GuitarShop\Cantracts\obj\Debug\net7.0\refint\Cantracts.dll
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\Api\New folder\GuitarShop\Cantracts\obj\Debug\net7.0\Cantracts.pdb
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\Api\New folder\GuitarShop\Cantracts\obj\Debug\net7.0\ref\Cantracts.dll

@@ -14,11 +14,13 @@ namespace OnlineShop.RestApi.Controllers.Factors
             _Service = service;
         }
         [HttpPost]
-        public async Task AddFactor([FromQuery] int userId)
+        public async Task AddFactor([FromQuery] int userId,
+                                     [FromQuery] string brand,
+                                     [FromQuery] string model)
                                    
         {
 
-           await _Service.AddFactor(userId);
+           await _Service.AddFactor(userId,brand,model);
         }
     }
 }

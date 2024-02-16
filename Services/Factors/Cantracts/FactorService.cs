@@ -9,6 +9,7 @@ namespace OnlineShop.Services.Factors.Cantracts
 {
     public interface FactorService
     {
-        public Task AddFactor(int userId);
+        public Task AddFactor(int userId,
+            string brand,string model);
     }
 }

@@ -19,17 +19,36 @@ namespace OnlineShopGuitar.Services
         }
         public async Task AddAcoustic(AddAcousticGuitarDto dto)
         {
-
-            var acoustic = new AcousticGuitar
+           await _unitOfWork.Begin();
+            try
             {
-                Brand = dto.Brand,
-                Model = dto.Model,
-                Count = dto.Count,
-                Price = dto.Price,  
-            };
-            
-            _repository.AddAcoustic(acoustic);
-           await _unitOfWork.Complete();
+                var acoustic = new AcousticGuitar
+                {
+                    Brand = dto.Brand,
+                    Model = dto.Model,
+                    Count = dto.Count,
+                    Price = dto.Price,
+                };
+                _repository.AddAcoustic(acoustic);
+                await _unitOfWork.Complete();
+                var guitar = new Guitar
+                {
+                    GuitarBrand = dto.Brand,
+                    GuitarModel = dto.Model,
+                    Price = dto.Price,
+
+                };
+                _repository.AddGuitar(guitar);
+                await _unitOfWork.Complete();
+                await _unitOfWork.Commit();
+                
+            }
+            catch 
+            {
+
+               await _unitOfWork.RollBack();
+            }
+          
         }
 
         public async Task <List<AcousticGuitar>> DeleteAcoustic(DeleteAcousticGuitarDto dto)
